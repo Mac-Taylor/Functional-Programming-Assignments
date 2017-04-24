@@ -19,16 +19,30 @@ let animals = require('./animals');
  * dataset as an input.
  */
 
-function WhatsTheSubject(card) {
+// IMPERATIVE SOLUTION BY MAC
+
+function WhatsTheSubject(word) {
     let currentSubject = [];
-    for (let i = 0; i < card.length; i++) {
-        currentSubject.push(card[i].subject)
+    for (let i = 0; i < word.length; i++) {
+        currentSubject.push(word[i].subject)
     }
     return currentSubject;
 }
 
-let test = WhatsTheSubject(reportcard);
-console.log(test);
+let test1 = WhatsTheSubject(reportcard);
+console.log(test1); 
+
+// FUNCTIONAL SOLUTION BY MAC
+
+let listofsubjects = [];
+
+function IsolateSubject(listofsubjects) {
+    let subjectTitle = listofsubjects.subject;
+    return subjectTitle;
+}
+
+let test2 = reportcard.map(IsolateSubject);
+console.log(test2); 
 
 /**
  * Problem #2
@@ -39,8 +53,20 @@ console.log(test);
  * Use the ITEMS dataset as an input.
  */
 
+// IMPERATIVE SOLUTION BY MAC
 
+function SalesTax(number) {
+    let ListofPrices = [];
+    for (let i = 0; i < number.length; i++) {
+        ListofPrices.push(number[i].price * 1.10);
+    }
+    return ListofPrices;
+}
 
+let test3 = SalesTax(items);
+console.log(test3);
+
+// 
 /**
  * Problem #3
  *
