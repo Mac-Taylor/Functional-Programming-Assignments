@@ -22,6 +22,36 @@ function avg(anything) {
     return total / anything.length;
 }
 
-console.log(avg(nmbrs)); // There it is!
+console.log(avg(nmbrs)); // There it is! Returned 15!
 
-// PROBLEM 2 - 
+//=============================================================================================
+
+// PROBLEM 2 - 'containsVowels' function 
+
+let letters = 'aghtyi' // should return 'true'
+let more_letters = 'ghjkl' // should return 'false'
+
+function SplitUp(anything) {
+    let ltrs = anything.split('');
+    return ltrs;
+} // This function splits up the string into an array.
+
+function IsVowel(whatever) {
+    if ((whatever === 'a')||(whatever === 'e')||(whatever === 'i')||(whatever === 'o')||(whatever === 'u')) {
+        return true;
+    } else {
+        return false;
+    }
+} // Is this a vowel? If so, return true, if not, return false.
+
+function containsVowels(str) {
+    let results = SplitUp(str);
+    let vowels = results.filter(IsVowel);
+    if (vowels.length > 0) {
+        return true;
+    } else {
+        return false;
+    }
+} //This is the function.
+
+console.log(containsVowels(letters)); //This input should return 'true'. 'more_letters' will return 'false'.
