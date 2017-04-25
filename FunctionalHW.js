@@ -89,7 +89,7 @@ console.log(test4);
 function AllZeroes(strs) {
     for (let i = 0; i < strs.length; i++) {
         if (strs[i] !== 0) { //if current item in array DOESN'T equal zero...
-            strs[i] = 0 // then dammit, it should!!!
+            strs[i] = 0 // then it should!!!
         }
         else { strs[i] = 0} //Otherwise, it should be zero. Or else someone is playing tricks on me.
                             //Probably don't even need this, but it's working so I am not gonna mess with it. 
@@ -97,10 +97,25 @@ function AllZeroes(strs) {
     return strs; //Let's see how that array looks.
 }
 
-let test5 = AllZeroes(['phish', 'Wormtown', 54, 'Giant worms', 834232, 'Amsterdam'])
-console.log(test5);
+let test5 = AllZeroes(['pigs', 3, 'different ones', ' ', true]) //Here is the most random array I could put together
+console.log(test5); // Here is me printing it in the console. Success!
 
 //FUNCTIONAL SOLUTION BY MAC™
+
+/* function ZeroIt(whatever) { 
+   let emptylist = [];
+   emptylist.push(0);
+   return emptylist;                        //whatever this is I can't figure out. Ask about in class.
+}
+
+function GotIt(anything) {
+    anything.splice.push(0);
+}
+   
+let test6 = GotIt(['orange', 2, 'three', 4])
+console.log(test6);
+
+ */
 
 
 
