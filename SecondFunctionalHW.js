@@ -17,6 +17,11 @@ function sum(first, second) {
     return first + second;
 } 
 
-console.log(nmbrs.reduce(sum, 0) / nmbrs.length); // It works (so far). 
+function avg(anything) {
+    let total = nmbrs.reduce(sum,0);
+    return total / anything.length;
+}
+
+console.log(avg(nmbrs)); // There it is!
 
 // PROBLEM 2 - 
