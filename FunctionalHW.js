@@ -66,6 +66,16 @@ function SalesTax(number) {
 let test3 = SalesTax(items);
 console.log(test3);
 
+// FUNCTIONAL SOLUTION BY MAC
+
+function IsolatePrice(totalCostList) {
+    let individualPrice = totalCostList.price;
+    return individualPrice;
+}
+
+let test4 = items.map(IsolatePrice);
+console.log(test4);
+
 // 
 /**
  * Problem #3
@@ -73,6 +83,24 @@ console.log(test3);
  * Write a function that returns an array of the same size as an input array but filled with zeroes. For 
  * example, the array [5, 9, 'hello'] would return [0, 0, 0].
  */
+
+//IMPERATIVE SOLUTION BY MAC™
+
+function AllZeroes(strs) {
+    for (let i = 0; i < strs.length; i++) {
+        if (strs[i] !== 0) { //if current item in array DOESN'T equal zero...
+            strs[i] = 0 // then dammit, it should!!!
+        }
+        else { strs[i] = 0} //Otherwise, it should be zero. Or else someone is playing tricks on me.
+                            //Probably don't even need this, but it's working so I am not gonna mess with it. 
+    }
+    return strs; //Let's see how that array looks.
+}
+
+let test5 = AllZeroes(['phish', 'Wormtown', 54, 'Giant worms', 834232, 'Amsterdam'])
+console.log(test5);
+
+//FUNCTIONAL SOLUTION BY MAC™
 
 
 
