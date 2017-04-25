@@ -102,10 +102,10 @@ console.log(test5); // Here is me printing it in the console. Success!
 
 //FUNCTIONAL SOLUTION BY MAC™
 
-/* function ZeroIt(whatever) { 
+/* /function ZeroIt(whatever) { 
    let emptylist = [];
    emptylist.push(0);
-   return emptylist;                        //whatever this is I can't figure out. Ask about in class.
+   return emptylist;                        //whatever this is, I can't figure it out. Ask about in class.
 }
 
 function GotIt(anything) {
@@ -113,11 +113,8 @@ function GotIt(anything) {
 }
    
 let test6 = GotIt(['orange', 2, 'three', 4])
-console.log(test6);
-
- */
-
-
+console.log(test6); */
+ 
 
 /**
  * Problem #4
