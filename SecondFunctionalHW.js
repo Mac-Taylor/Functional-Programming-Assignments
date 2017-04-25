@@ -11,10 +11,12 @@
 // PROBLEM 1 - 'avg' function
 
 let nmbrs = [5, 10, 15, 20, 25] // Average of these numbers (
-                                 // aka what the function should return) is 
+                                 // aka what the function should return) is 15.
 
 function sum(first, second) {
     return first + second;
 } 
 
-console.log(nmbrs.reduce(sum, 0) / nmbrs.length);
+console.log(nmbrs.reduce(sum, 0) / nmbrs.length); // It works (so far). 
+
+// PROBLEM 2 - 
