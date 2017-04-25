@@ -70,7 +70,7 @@ console.log(test3);
 
 function IsolatePrice(totalCostList) {
     let individualPrice = totalCostList.price;
-    return individualPrice;
+    return individualPrice * 1.10;
 }
 
 let test4 = items.map(IsolatePrice);
