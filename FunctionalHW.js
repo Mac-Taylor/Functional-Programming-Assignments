@@ -84,7 +84,7 @@ console.log(test4);
  * example, the array [5, 9, 'hello'] would return [0, 0, 0].
  */
 
-//IMPERATIVE SOLUTION BY MAC
+//IMPERATIVE SOLUTION BY MAC™
 
 function AllZeroes(strs) {
     for (let i = 0; i < strs.length; i++) {
