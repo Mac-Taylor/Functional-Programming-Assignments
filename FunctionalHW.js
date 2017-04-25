@@ -58,7 +58,8 @@ console.log(test2);
 function SalesTax(number) {
     let ListofPrices = [];
     for (let i = 0; i < number.length; i++) {
-        ListofPrices.push(number[i].price * 1.10);
+        ListofPrices.push(number[i].price * 1.10); //I'm an idiot I only returned the prices,
+                                                   //not the whole item.
     }
     return ListofPrices;
 }
@@ -69,7 +70,7 @@ console.log(test3);
 // FUNCTIONAL SOLUTION BY MAC
 
 function IsolatePrice(totalCostList) {
-    let individualPrice = totalCostList.price;
+    let individualPrice = totalCostList.price; //Same mistake as above, whoops :/
     return individualPrice * 1.10;
 }
 
