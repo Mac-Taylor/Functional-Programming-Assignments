@@ -55,3 +55,27 @@ function containsVowels(str) {
 } //This is the function.
 
 console.log(containsVowels(letters)); //This input should return 'true'. 'more_letters' will return 'false'.
+
+//=============================================================================================
+
+// PROBLEM 3 - 'pigLatin' function 
+
+let test1 = 'Mac';
+let test2 = 'Bad day.'
+
+function firstLetter(word) {
+    let first = word.slice(0, 1);
+    return first;
+} // function grabs the first letter of the string
+
+function remaining_letters(word) {
+    let remaining = word.slice(1);
+    return remaining;
+} // function isolates the remaining letters of the 
+
+function pigLatin(str) {
+    let endresult = remaining_letters(str) + firstLetter(str) + 'ay';
+    return endresult;
+}
+
+console.log(pigLatin(test1));
